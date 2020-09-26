@@ -5,7 +5,7 @@ function setup() {
   createCanvas(600, 600);
   background(200);
 
-  console.log("initial array is" + icecream);
+  console.log("initial array is ");
   console.log(icecream);
 
   icecream.shift(2, 2);
