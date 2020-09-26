@@ -13,6 +13,16 @@ let icecream = [
 {
   name: "mint",
   topping: "sprinkles"
+},
+
+{
+  name: "bubblegum",
+  topping: "waffles"
+},
+
+{
+  name:"cookiedough",
+  topping: "chocolatechip"
 }
 ];
 
