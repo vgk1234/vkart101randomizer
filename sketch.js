@@ -1,4 +1,4 @@
-let icecream = ["vanilla","chocolate", "mint", "bubblegum"];
+let icecream = ["vanilla","chocolate", "mint", "bubblegum", "cookiedough"];
 
 
 function setup() {
@@ -13,6 +13,8 @@ function setup() {
   console.log(icecream);
 
   icecream.push("doublescoop");
+  console.log("array after push")
+  console.log(icecream);
 
 }
 
