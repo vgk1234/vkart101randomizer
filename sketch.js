@@ -30,7 +30,8 @@ function setup() {
   createCanvas(600, 600);
   background(200);
 
-  console.log(icecream[2].topping);
+  console.log(icecream.length)
+  console.log(dogs[int(random(4))]);
 
 }
 
