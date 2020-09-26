@@ -8,6 +8,9 @@ function setup() {
   console.log("initial array is" + icecream);
   console.log(icecream);
 
+  icecream.pop();
+  console.log(icecream);
+
 }
 
 function draw() {
