@@ -8,12 +8,12 @@ function setup() {
   console.log("initial array is" + icecream);
   console.log(icecream);
 
-  icecream.pop();
-  console.log("array after pop")
+  icecream.shift();
+  console.log("array after shift")
   console.log(icecream);
 
-  icecream.push("doublescoop");
-  console.log("array after push")
+  icecream.unshift("doublescoop");
+  console.log("array after unshift")
   console.log(icecream);
 
 }
