@@ -9,7 +9,10 @@ function setup() {
   console.log(icecream);
 
   icecream.pop();
+  console.log("array after pop")
   console.log(icecream);
+
+  icecream.push("doublescoop");
 
 }
 
