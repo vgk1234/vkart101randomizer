@@ -5,7 +5,8 @@ function setup() {
   createCanvas(600, 600);
   background(200);
 
-  console.log(icecream[0]);
+  console.log("initial array is" + icecream);
+  console.log(icecream);
 
 }
 
