@@ -1,5 +1,20 @@
 //ice cream flavors
-let icecream = ["vanilla","chocolate", "mint", "bubblegum", "cookiedough"];
+let icecream = [
+{
+  name: "vanilla",
+  topping: "topping"
+},
+
+{
+  name: "chocolate",
+  topping: "truffles"
+},
+
+{
+  name: "mint",
+  topping: "sprinkles"
+}
+];
 
 function setup() {
   createCanvas(600, 600);
