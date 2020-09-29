@@ -30,7 +30,7 @@ function setup() {
   createCanvas(600, 600);
   background(200);
 
-  console.log(icecream[].name);
+  console.log(icecream[0].name);
 
 }
 
