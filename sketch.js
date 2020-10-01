@@ -26,14 +26,18 @@ let icecream = [
 }
 ];
 
+let randomIndex;
+
 function setup() {
   createCanvas(600, 600);
   background(200);
 
+  setInterval(changeBackground, 1000);
+
   textSize(32);
 
-  text("randomize", 200, 200);
-    
+  text(icecream.name, 200, 200);
+
   console.log(icecream[0].name);
 
   console.log("initial array is ")
@@ -49,36 +53,20 @@ function setup() {
 
 }
 
-function setup() {
-    createCanvas(600, 600);
-    background(200);
-    textSize(32);
-    
-    text("randomize", 200, 200);
-    
-    setInterval(changeBackground, 1000);
-    
-    console.log(icecream[0].name);
-  
-  }
-  
 function draw () {
-    if (animating == true) {
-      ellipse(random(width), random (height), random(50, 200));
-    }
-  }
-  
-function changeBackground () {
-      background (random(255), random(255), random(255));
-  }
-  
-function randomizer() {
-      background(random (200, 255));
-      randomIndex = int(random(icecream.length));  
-      text(icecream[randomIndex].name, 200, 200);
-      icecream.splice(randomIndex, 1);
+  randomizer;
 }
   
-function mousePressed() {
-      setTimeout(randomizer, 50);
+function randomizer() {
+    randomIndex = int(random(icecream.length));  
+    text(icecream[randomIndex].name, 200, 200);
+    icecream.splice(randomIndex, 1);
   }
+
+function mousePressed() {
+    setTimeout(randomizer, 50);
+}
+
+function changeBackground () {
+  background (random(255), random(255), random(255));
+}
