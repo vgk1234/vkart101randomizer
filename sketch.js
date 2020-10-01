@@ -30,7 +30,16 @@ function setup() {
   createCanvas(600, 600);
   background(200);
 
-  console.log(icecream[0].name);
+  console.log("initial array is ")
+  console.log(icecream);
+
+  icecream.pop();
+  console.log("array after pop")
+  console.log(icecream);
+
+  icecream.push();
+  console.log("array after push")
+  console.log(icecream);
 
 }
 
