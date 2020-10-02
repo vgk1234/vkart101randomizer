@@ -27,46 +27,44 @@ let icecream = [
 ];
 
 let randomIndex;
+let animating = true;
 
 function setup() {
   createCanvas(600, 600);
-  background(220);
+  background(200);
+  textSize(32);
+
+  text("randomize", 200, 200);
 
   setInterval(changeBackground, 1000);
 
-  textSize(32);
-
-  text(icecream.name, 200, 200);
-
   console.log(icecream[0].name);
-
-  console.log("initial array is ")
-  console.log(icecream);
-
-  icecream.pop();
-  console.log("array after pop")
-  console.log(icecream);
-
-  icecream.push();
-  console.log("array after push")
-  console.log(icecream);
 
 }
 
 function draw () {
-  randomizer;
+  if (animating == true) {
+    ellipse(random(width), random (height), random(50, 200));
+  }
+}
+
+function changeBackground () {
+    background (random(255), random(255), random(255));
 }
 
 function randomizer() {
+  if (icecream[0]) {
+    background(random (200, 255));
     randomIndex = int(random(icecream.length));
     text(icecream[randomIndex].name, 200, 200);
     icecream.splice(randomIndex, 1);
   }
+  else  {
+    background(random (200, 255));
+    text("no answer", 200, 200);
+  }
+}
 
 function mousePressed() {
     setTimeout(randomizer, 50);
-}
-
-function changeBackground () {
-  background (220);
 }
