@@ -30,7 +30,7 @@ let randomIndex;
 
 function setup() {
   createCanvas(600, 600);
-  background(200);
+  background(220);
 
   setInterval(changeBackground, 1000);
 
@@ -68,5 +68,5 @@ function mousePressed() {
 }
 
 function changeBackground () {
-  background (random(255), random(255), random(255));
+  background (220);
 }
