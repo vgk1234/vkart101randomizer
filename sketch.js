@@ -56,9 +56,9 @@ function setup() {
 function draw () {
   randomizer;
 }
-  
+
 function randomizer() {
-    randomIndex = int(random(icecream.length));  
+    randomIndex = int(random(icecream.length));
     text(icecream[randomIndex].name, 200, 200);
     icecream.splice(randomIndex, 1);
   }
