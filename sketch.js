@@ -34,7 +34,7 @@ function setup() {
   background(200);
   textSize(32);
 
-  text("randomize", 200, 200);
+  text("randomize", 200, 300);
 
   setInterval(changeBackground, 1000);
 
@@ -45,6 +45,7 @@ function setup() {
 function draw () {
   if (animating == true) {
     ellipse(random(600), random (100), random(100, 100));
+    fill(0);
   }
 }
 
@@ -56,12 +57,12 @@ function randomizer() {
   if (icecream[0]) {
     background(random (200, 255));
     randomIndex = int(random(icecream.length));
-    text(icecream[randomIndex].name, 200, 200);
+    text(icecream[randomIndex].name, 200, 300);
     icecream.splice(randomIndex, 1);
   }
   else  {
     background(random (200, 255));
-    text("no answer", 200, 200);
+    text("no answer", 200, 300);
   }
 }
 
