@@ -18,6 +18,7 @@ function setup() {
   frameRate(12);
 
   text("Click Here", 0, 0);
+  //console.log(IceCream);
 }
 
 function draw () {
