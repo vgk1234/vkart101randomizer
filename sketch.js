@@ -40,10 +40,9 @@ function setup() {
   createCanvas(600, 600);
   background(200);
   textSize(32);
-  imageMode(CENTER);
   frameRate(12);
 
-  text("randomize", 200, 100);
+  text("click to randomize", 200, 100);
 
   setInterval(changeBackground, 1000);
 
