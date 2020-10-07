@@ -52,7 +52,7 @@ function draw () {
     if (animating == true) {
       clear();
       image(IceCream[imageCounter], 0, 0);
-      if (imageCounter < IceCream.length) {
+      if (imageCounter < IceCream.length - 1) {
       imageCounter++;
       }
       else {
