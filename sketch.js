@@ -10,15 +10,16 @@ function preload () {
 }
 
 function setup() {
-  createButton("Click To Randomize");
-
   createCanvas(400, 400);
   background(200);
   textSize(32);
   frameRate(12);
 
   text("Click Here", 0, 0);
-  //console.log(IceCream);
+  button = createButton("Click To Randomize");
+  button.mousePressed(buttonPressed);
+
+  console.log(IceCream);
 }
 
 function draw () {
@@ -33,8 +34,10 @@ function draw () {
         imageCounter = 0;
       }
     }
+
+    //if (animating == false)
 }
 
-function mousePressed () {
+function buttonPressed () {
     draw();
 }
