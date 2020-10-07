@@ -26,9 +26,9 @@ let icecream = [
 }
 ];
 
-let IceCream = [];
 let randomIndex;
-let animating = true;
+let animating = false;
+let IceCream = [];
 
 function preload () {
  for (let i = 0; i <= 4; i++) {
@@ -43,10 +43,6 @@ function setup() {
   frameRate(8);
 
   text("click to randomize", 200, 100);
-
-  setInterval(changeBackground, 1000);
-
-  console.log(icecream[0].name);
   console.log(IceCream);
 
 }
