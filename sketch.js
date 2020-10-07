@@ -38,6 +38,8 @@ function preload () {
 }
 
 function setup() {
+  createButton("Click To Randomize");
+
   createCanvas(600, 600);
   background(200);
   textSize(32);
@@ -45,10 +47,6 @@ function setup() {
 
   text("click to randomize", 0, 0);
   console.log(IceCream);
-
-
-  createButton("Click To Randomize");
-
 }
 
 function draw () {
