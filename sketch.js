@@ -65,9 +65,6 @@ function draw () {
     }
 }
 
-function changeBackground () {
-    background (random(255), random(255), random(255));
-}
 
 function randomizer() {
   animating = false;
@@ -79,4 +76,6 @@ function randomizer() {
   }
 }
 
-
+function mousePressed () {
+    function draw ();
+}
