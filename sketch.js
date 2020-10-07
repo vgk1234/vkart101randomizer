@@ -29,6 +29,7 @@ let icecream = [
 let randomIndex;
 let animating = true;
 let IceCream = [];
+let imageCounter = 0;
 
 function preload () {
  for (let i = 0; i <= 4; i++) {
@@ -49,11 +50,9 @@ function setup() {
 
 function draw () {
     if (animating == true) {
-      image(IceCream[i], 0, 0);
-    }
-      if (imageCounter < IceCream.length + 1){
-        imageCounter++;
-        console.log(imageCounter);
+      clear();
+      image(IceCream[imageCounter], 0, 0);
+      imageCounter++;
     }
 }
 
