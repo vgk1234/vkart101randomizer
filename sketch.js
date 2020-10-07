@@ -27,7 +27,7 @@ let icecream = [
 ];
 
 let randomIndex;
-let animating = false;
+let animating = true;
 let IceCream = [];
 
 function preload () {
