@@ -36,5 +36,5 @@ function draw () {
 }
 
 function mousePressed () {
-    
+    draw();
 }
