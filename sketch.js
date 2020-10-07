@@ -75,6 +75,4 @@ function randomizer() {
   }
 }
 
-function mousePressed() {
-  setTimeout(randomizer, 50);
-}
+
