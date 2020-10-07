@@ -26,6 +26,14 @@ let icecream = [
 }
 ];
 
+let IceCream = [];
+
+function preload () {
+ for (let i = 0; i <= 5; i++) {
+   IceCream[i] = loadImage(`Assets/Resized_Images/IceCream_${i}.jpg`)
+ }
+}
+
 let randomIndex;
 let animating = true;
 
@@ -34,18 +42,18 @@ function setup() {
   background(200);
   textSize(32);
 
-  text("randomize", 200, 300);
+  text("randomize", 200, 100);
 
   setInterval(changeBackground, 1000);
 
   console.log(icecream[0].name);
+  console.log(IceCream);
 
 }
 
 function draw () {
-  if (animating == true) {
-    ellipse(random(600), random (100), random(100, 100));
-    fill(0);
+    if (animating == true) {
+      image(IceCream[0], 200, 200);
   }
 }
 
@@ -57,12 +65,12 @@ function randomizer() {
   if (icecream[0]) {
     background(random (200, 255));
     randomIndex = int(random(icecream.length));
-    text(icecream[randomIndex].name, 200, 300);
+    text(icecream[randomIndex].name, 200, 100);
     icecream.splice(randomIndex, 1);
   }
   else  {
     background(random (200, 255));
-    text("no answer", 200, 300);
+    text("no answer", 200, 100);
   }
 }
 
