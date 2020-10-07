@@ -40,6 +40,8 @@ function setup() {
   createCanvas(600, 600);
   background(200);
   textSize(32);
+  imageMode(CENTER);
+  frameRate(12);
 
   text("randomize", 200, 100);
 
@@ -62,6 +64,7 @@ function draw () {
       else {
         imageCounter = 0;
       }
+    }
 }
 
 function changeBackground () {
@@ -82,5 +85,5 @@ function randomizer() {
 }
 
 function mousePressed() {
-    setTimeout(randomizer, 50);
+  setTimeout(randomizer, 50);
 }
