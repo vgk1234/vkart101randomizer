@@ -52,7 +52,7 @@ function setup() {
 
 function draw () {
     if (animating == true) {
-      image(IceCream[0], 0, 200);
+      image(IceCream[0], 0, height/2);
   }
 }
 
