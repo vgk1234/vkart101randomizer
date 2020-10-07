@@ -17,7 +17,6 @@ function setup() {
   text("Click Here", 100, 100);
 
   button = createButton("RANDOMIZE");
-  //button.position(450, 500)
   button.mousePressed();
 
   //console.log(IceCream);
