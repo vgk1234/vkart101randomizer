@@ -31,7 +31,7 @@ let randomIndex;
 let animating = true;
 
 function preload () {
- for (let i = 0; i <= 5; i++) {
+ for (let i = 0; i <= 4; i++) {
    IceCream[i] = loadImage(`Assets/Resized_Images/IceCream_${i}.jpg`)
  }
 }
