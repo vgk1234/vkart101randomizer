@@ -10,19 +10,22 @@ function preload () {
 }
 
 function setup() {
+  text("Click Here", 0, 0);
   createCanvas(400, 400);
   background(200);
-  textSize(32);
   frameRate(12);
-
   text("Click Here", 0, 0);
-  button = createButton("Click To Randomize");
-  button.mousePressed(buttonPressed);
 
-  console.log(IceCream);
+  button = createButton('RANDOMIZE');
+  //button.position(450, 500)
+  button.mousePressed();
+
+  //console.log(IceCream);
 }
 
-function draw () {
+//button.mousePressed(buttonPressed);
+
+function mousePressed() {  
     if (animating == true) {
       clear();
       image(IceCream[imageCounter], 0, 0);
@@ -32,12 +35,12 @@ function draw () {
       }
       else {
         imageCounter = 0;
+        background(200);
+        text('NO MORE ITEMS');
       }
     }
-
-    //if (animating == false)
 }
 
-function buttonPressed () {
-    draw();
-}
+//function randomizer () {
+  //animating = false;
+//}
