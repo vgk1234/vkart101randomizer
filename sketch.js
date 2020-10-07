@@ -52,8 +52,16 @@ function setup() {
 
 function draw () {
     if (animating == true) {
+      clear();
       image(IceCream[0], 0, 0);
-  }
+
+      if (imageCounter < IceCream.length - 1){
+        imageCounter++;
+        console.log(imageCounter);
+      }
+      else {
+        imageCounter = 0;
+      }
 }
 
 function changeBackground () {
@@ -61,19 +69,18 @@ function changeBackground () {
 }
 
 function randomizer() {
+  animating = false;
   if (icecream[0]) {
-    background(random (200, 255));
+    background(changeBackground);
     randomIndex = int(random(icecream.length));
     text(icecream[randomIndex].name, 200, 100);
     icecream.splice(randomIndex, 1);
   }
   else  {
     background(random (200, 255));
-    text("no answer", 200, 100);
   }
 }
 
 function mousePressed() {
     setTimeout(randomizer, 50);
 }
-
