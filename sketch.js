@@ -79,9 +79,6 @@ function randomizer() {
     text(icecream[randomIndex].name, 200, 100);
     icecream.splice(randomIndex, 1);
   }
-  else  {
-    background(random (200, 255));
-  }
 }
 
 function mousePressed() {
