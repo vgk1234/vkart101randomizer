@@ -27,15 +27,14 @@ let icecream = [
 ];
 
 let IceCream = [];
+let randomIndex;
+let animating = true;
 
 function preload () {
  for (let i = 0; i <= 5; i++) {
    IceCream[i] = loadImage(`Assets/Resized_Images/IceCream_${i}.jpg`)
  }
 }
-
-let randomIndex;
-let animating = true;
 
 function setup() {
   createCanvas(600, 600);
