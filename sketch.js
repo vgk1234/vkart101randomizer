@@ -77,5 +77,5 @@ function randomizer() {
 }
 
 function mousePressed () {
-    function draw ();
+    draw ();
 }
