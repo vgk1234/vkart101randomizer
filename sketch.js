@@ -49,7 +49,7 @@ function setup() {
 
 function draw () {
     if (animating == true) {
-      image(IceCream[0], 0, 0);
+      image(IceCream[i], 0, 0);
 
       if (imageCounter < IceCream.length + 1){
         imageCounter++;
