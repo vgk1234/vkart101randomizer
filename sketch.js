@@ -46,6 +46,9 @@ function setup() {
   text("click to randomize", 0, 0);
   console.log(IceCream);
 
+
+  createButton("Click To Randomize");
+
 }
 
 function draw () {
