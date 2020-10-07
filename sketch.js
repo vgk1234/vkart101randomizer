@@ -1,31 +1,3 @@
-//ice cream flavors
-let icecream = [
-{
-  name: "vanilla",
-  topping: "topping"
-},
-
-{
-  name: "chocolate",
-  topping: "truffles"
-},
-
-{
-  name: "mint",
-  topping: "sprinkles"
-},
-
-{
-  name: "bubblegum",
-  topping: "waffles"
-},
-
-{
-  name:"cookiedough",
-  topping: "chocolatechip"
-}
-];
-
 let randomIndex;
 let animating = true;
 let IceCream = [];
@@ -40,12 +12,12 @@ function preload () {
 function setup() {
   createButton("Click To Randomize");
 
-  createCanvas(600, 600);
+  createCanvas(400, 400);
   background(200);
   textSize(32);
   frameRate(12);
 
-  text("click to randomize", 0, 0);
+  text("Click Here", 0, 0);
   console.log(IceCream);
 }
 
