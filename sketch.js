@@ -42,7 +42,7 @@ function setup() {
   textSize(32);
   frameRate(8);
 
-  text("click to randomize", 200, 100);
+  text("click to randomize", 0, 0);
   console.log(IceCream);
 
 }
@@ -50,14 +50,10 @@ function setup() {
 function draw () {
     if (animating == true) {
       image(IceCream[i], 0, 0);
-
+    }
       if (imageCounter < IceCream.length + 1){
         imageCounter++;
         console.log(imageCounter);
-      }
-      else {
-        imageCounter = 0;
-      }
     }
 }
 
