@@ -54,6 +54,7 @@ function draw () {
       image(IceCream[imageCounter], 0, 0);
       if (imageCounter < IceCream.length - 1) {
       imageCounter++;
+      console.log(imageCounter);
       }
       else {
         imageCounter = 0;
