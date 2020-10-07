@@ -63,17 +63,6 @@ function draw () {
     }
 }
 
-
-function randomizer() {
-  animating = false;
-  if (icecream[0]) {
-    background(changeBackground);
-    randomIndex = int(random(icecream.length));
-    text(icecream[randomIndex].name, 200, 100);
-    icecream.splice(randomIndex, 1);
-  }
-}
-
 function mousePressed () {
-    draw ();
+    
 }
