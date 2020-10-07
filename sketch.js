@@ -40,7 +40,7 @@ function setup() {
   createCanvas(600, 600);
   background(200);
   textSize(32);
-  frameRate(12);
+  frameRate(8);
 
   text("click to randomize", 200, 100);
 
@@ -56,7 +56,7 @@ function draw () {
       clear();
       image(IceCream[0], 0, 0);
 
-      if (imageCounter < IceCream.length - 1){
+      if (imageCounter < IceCream.length + 1){
         imageCounter++;
         console.log(imageCounter);
       }
