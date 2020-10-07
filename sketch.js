@@ -41,7 +41,7 @@ function setup() {
   createCanvas(600, 600);
   background(200);
   textSize(32);
-  frameRate(12);
+  frameRate(4);
 
   text("click to randomize", 0, 0);
   console.log(IceCream);
