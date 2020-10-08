@@ -1,7 +1,36 @@
+let icecream = [
+  {
+    name: "vanilla",
+    color: "white"
+  },
+  
+  {
+    name: "chocolate",
+    name: "brown"
+  },
+  
+  {
+    name: "mint",
+    topping: "green"
+  },
+  
+  {
+    name: "bubblegum",
+    topping: "blue"
+  },
+  
+  {
+    name:"cookiedough",
+    topping: "light brown"
+  }
+  ];
+
+
 let randomIndex;
 let animating = true;
 let IceCream = [];
 let imageCounter = 0;
+let nameInputs = [];
 
 function preload () {
  for (let i = 0; i < 5; i++) {
@@ -18,8 +47,6 @@ function setup() {
 
   button = createButton("RANDOMIZE");
   button.mousePressed();
-
-  //console.log(IceCream);
 }
 
 //button.mousePressed(buttonPressed);
@@ -34,14 +61,23 @@ function mousePressed() {
       }
       else {
         imageCounter = 0;
-        createCanvas(400, 400);
-        background(200);
-        textSize(32);
-        text("NO MORE", 100, 100);
       }
     }
 }
 
-//function randomizer () {
-  //animating = false;
-//}
+function randomizer() {
+  if (animating == false) {
+    if (icecream[0]) {
+      background(220);
+      randomIndex = int(random(icecream.length));  
+      text(icecream[randomIndex].name, 100, 100);
+      icecream.splice(randomIndex, 1);
+    }
+    else {
+      background(220);
+      text("NO MORE ITEMS", 100, 100);
+    }  
+  }
+}
+
+
