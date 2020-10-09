@@ -1,10 +1,10 @@
 let icecream = [
   {
-    name: "vanilla";
+    name: "vanilla",
   },
   
   {
-    name: "chocolate";
+    name: "chocolate",
   },
   
   {
@@ -12,11 +12,11 @@ let icecream = [
   },
   
   {
-    name: "bubblegum";
+    name: "bubblegum",
   },
   
   {
-    name:"cookiedough"
+    name:"cookiedough",
   }
   ];
 
