@@ -65,7 +65,7 @@ function randomizer() {
     if (icecream[0]) {
       background(220);
       randomIndex = int(random(icecream.length));  
-      text(icecream[randomIndex].name, 100, 100);
+      text(icecream[randomIndex].name);
       icecream.splice(randomIndex, 1);
     }
     else {
