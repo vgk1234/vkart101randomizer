@@ -1,27 +1,22 @@
 let icecream = [
   {
-    name: "vanilla",
-    color: "white"
+    name: "vanilla";
   },
   
   {
-    name: "chocolate",
-    name: "brown"
+    name: "chocolate";
   },
   
   {
     name: "mint",
-    topping: "green"
   },
   
   {
-    name: "bubblegum",
-    topping: "blue"
+    name: "bubblegum";
   },
   
   {
-    name:"cookiedough",
-    topping: "light brown"
+    name:"cookiedough"
   }
   ];
 
@@ -66,7 +61,7 @@ function mousePressed() {
 }
 
 function randomizer() {
-  if (animating == false) {
+  animating == false 
     if (icecream[0]) {
       background(220);
       randomIndex = int(random(icecream.length));  
@@ -76,8 +71,7 @@ function randomizer() {
     else {
       background(220);
       text("NO MORE ITEMS", 100, 100);
-    }  
-  }
+    } 
 }
 
 
