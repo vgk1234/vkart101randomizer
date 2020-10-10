@@ -61,7 +61,7 @@ function mousePressed() {
 }
 
 function randomizer() {
-  animating == false 
+  if (animating == false) {
     if (icecream[0]) {
       background(220);
       randomIndex = int(random(icecream.length));  
@@ -72,6 +72,7 @@ function randomizer() {
       background(220);
       text("NO MORE ITEMS", 100, 100);
     } 
+  }
 }
 
 
